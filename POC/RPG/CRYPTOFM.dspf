@@ -1,0 +1,12 @@
+     A                                      DSPSIZ(24 80 *DS3)
+     A                                      CA03(03 'Exit')
+     A          R SCREEN1
+     A                                  1 30'3DES ECB Encryption'
+     A                                      DSPATR(HI)
+     A                                  5  5'Key (16 Hex) . . . . :'
+     A            S_KEY         16A  B  5 30CHECK(ER)
+     A                                  7  5'Data (16 Hex)  . . . :'
+     A            S_DATA        16A  B  7 30CHECK(ER)
+     A                                 10  5'Result (Hex) . . . . :'
+     A            S_RESULT      16A  O 10 30DSPATR(HI)
+     A                                 23  2'F3=Exit'
