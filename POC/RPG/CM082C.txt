@@ -1,0 +1,45 @@
+
+     PGM
+             DSPFD      FILE(KAOSY/*ALL) TYPE(*ATR) OUTPUT(*OUTFILE) +
+                          FILEATR(*ICFF) OUTFILE(QTEMP/ICFF) +
+                          OUTMBR(*FIRST *REPLACE)
+             DSPFD      FILE(KAOAC/*ALL) TYPE(*ATR) OUTPUT(*OUTFILE) +
+                          FILEATR(*ICFF) OUTFILE(QTEMP/ICFF) +
+                          OUTMBR(*FIRST *ADD)
+             DSPFD      FILE(KAOBS/*ALL) TYPE(*ATR) OUTPUT(*OUTFILE) +
+                          FILEATR(*ICFF) OUTFILE(QTEMP/ICFF) +
+                          OUTMBR(*FIRST *ADD)
+             DSPFD      FILE(KAOCS/*ALL) TYPE(*ATR) OUTPUT(*OUTFILE) +
+                          FILEATR(*ICFF) OUTFILE(QTEMP/ICFF) +
+                          OUTMBR(*FIRST *ADD)
+             DSPFD      FILE(KAODB/*ALL) TYPE(*ATR) OUTPUT(*OUTFILE) +
+                          FILEATR(*ICFF) OUTFILE(QTEMP/ICFF) +
+                          OUTMBR(*FIRST *ADD)
+             MONMSG     MSGID(CPF3020)
+             DSPFD      FILE(KAODT/*ALL) TYPE(*ATR) OUTPUT(*OUTFILE) +
+                          FILEATR(*ICFF) OUTFILE(QTEMP/ICFF) +
+                          OUTMBR(*FIRST *ADD)
+             DSPFD      FILE(KAOEX/*ALL) TYPE(*ATR) OUTPUT(*OUTFILE) +
+                          FILEATR(*ICFF) OUTFILE(QTEMP/ICFF) +
+                          OUTMBR(*FIRST *ADD)
+             DSPFD      FILE(KAOLN/*ALL) TYPE(*ATR) OUTPUT(*OUTFILE) +
+                          FILEATR(*ICFF) OUTFILE(QTEMP/ICFF) +
+                          OUTMBR(*FIRST *ADD)
+             DSPFD      FILE(KAOMG/*ALL) TYPE(*ATR) OUTPUT(*OUTFILE) +
+                          FILEATR(*ICFF) OUTFILE(QTEMP/ICFF) +
+                          OUTMBR(*FIRST *ADD)
+             MONMSG     MSGID(CPF3020)
+             DSPFD      FILE(PTLIBBOK/*ALL) TYPE(*ATR) +
+                          OUTPUT(*OUTFILE) FILEATR(*ICFF) +
+                          OUTFILE(QTEMP/ICFF) OUTMBR(*FIRST *ADD)
+             DSPFD      FILE(PTFLIBBOK/*ALL) TYPE(*ATR) +
+                          OUTPUT(*OUTFILE) FILEATR(*ICFF) +
+                          OUTFILE(QTEMP/ICFF) OUTMBR(*FIRST *ADD)
+             DSPFD      FILE(BOKSRCLIB/*ALL) TYPE(*ATR) +
+                          OUTPUT(*OUTFILE) FILEATR(*ICFF) +
+                          OUTFILE(QTEMP/ICFF) OUTMBR(*FIRST *ADD)
+             DSPFD      FILE(BOKOBJLIB/*ALL) TYPE(*ATR) +
+                          OUTPUT(*OUTFILE) FILEATR(*ICFF) +
+                          OUTFILE(QTEMP/ICFF) OUTMBR(*FIRST *ADD)
+             CALL       CM082R1
+     ENDPGM

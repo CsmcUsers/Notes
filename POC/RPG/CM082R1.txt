@@ -1,0 +1,17 @@
+     H            Y
+     FICFF    IF  E                    DISK
+     F            QWHFDICF                          KRENAMEICFFR
+      ***********************************************************
+      *
+     C                     READ ICFFR                    30
+     C           *IN30     DOWEQ*OFF
+     C           RLOC      IFNE *BLANKS
+     C                     CALL 'CM082C1'
+     C                     PARM           FILE
+     C                     PARM           PGMDEV
+     C                     ENDIF
+     C                     READ ICFFR                    30
+     C                     ENDDO
+      *
+     C                     SETON                     LR
+     C                     RETRN

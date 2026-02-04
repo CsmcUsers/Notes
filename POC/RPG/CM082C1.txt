@@ -1,0 +1,9 @@
+     PGM        PARM(&ICF &PGMD)
+             DCL        &ICF   *CHAR     10
+             DCL        &PGMD  *CHAR     10
+             DCL        VAR(&CICS) TYPE(*CHAR) LEN(10)
+             RTVDTAARA  DTAARA(CICS (1 10))      RTNVAR(&CICS)
+             CHGICFDEVE FILE(&ICF) PGMDEV(&PGMD) RMTLOCNAME(&CICS) +
+                        DEV(HT01A) LCLLOCNAME(HT01A)
+             RETURN
+     ENDPGM
